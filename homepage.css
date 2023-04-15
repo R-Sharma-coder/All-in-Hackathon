@@ -1,0 +1,84 @@
+/* Navigation bar as a whole */
+.navbar ul {
+    margin-top:0 px;
+    margin-bottom: 100 px;
+    margin: auto; 
+    background-color: #ffc0cb;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    float: left;
+    margin: 10px;
+  }
+  
+  /* individual link */
+  .navbar ul li a {
+    font-family: sans-serif;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 8px 10px;
+  } 
+  
+  /* hovered link */
+  .navbar ul li a:hover {
+    font-weight: bold;
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .image {
+    margin-right: 20px;
+  }
+  
+  .side-text-flexbox {
+    text-align: left;
+    font-size: 50px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px; 
+    text-decoration: underline; 
+  }
+  
+  body {
+    background-color: #F5F5F5;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 0 30px;
+  }
+  
+  .about { 
+    margin-bottom: 100px;
+  }
+  
+  .link{
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  }
+  
+  .text{
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  }
+  
+  
+  

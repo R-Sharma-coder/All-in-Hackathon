@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All in Hackathon Homepage</title>
+    <link href="homepage.css" rel="stylesheet" type="text/css" />
+    <!-- We could add a small logo, that would show up on new tabs -->
+    <link rel = "icon" href = "ImageLogoSmall"utf-8>
+  </head>
+
+  <body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#upload">Get Started</a></li>
+    </ul>
+  </div>
+
+  <!-- Flexbox -->
+  <div class="flex-container">
+
+    <!--Image or Logo-->
+    <div class ="image"><img id =""
+      src="https://usbox.com/images/B902.jpg" alt = "placeholder"></img></div>
+
+    <!--Text on the side (Right)-->
+      <div class="side-text-flexbox">
+      <h1>All in Hackathon - Productivity app</h1>
+    </div>
+  </div>
+
+  <!---About section-->
+
+  <div class = "about">
+    <h1 id = "about"> About 'A' </h1> 
+    <p>Welcome to ‘A’, the optimal productivity resource for busy students and professionals! This website will assist those finding themselves swamped with deadlines and due dates. Are you tired of manually entering in all of your important information? We are here to help!! 
+    With our platform, easily upload your PDF documents - like a class syllabus - and our technology will pull out the important information from those documents - like the assignment due dates off of your class syllabus! Try it out today, and experience the benefits for yourself! You will be better able to increase your productivity, keep track of your due dates and schedule.  
+    </p>
+  </div>
+
+  <!---Upload section-->
+
+  <div class = "upload">
+    <h1 id = "upload"> Get Started</h1>
+
+    <!--Text boxes -->
+    <div class = "link"><label for="link" style="margin-bottom: 20px;">Enter the link to your syllabus here: (Note: the link can not be a 'google drive' or private link):</label>
+        <input type="text" id="link" name="link" size="50" style="width: 80%; border: 5px solid pink;" placeholder="link here">
+    </div>     
+   
+    <div class = "text">
+      <label for="text" style="margin-bottom: 20px;">If the link to your syllabus does not exist, please copy and paste the contents of your syllabus into the text-field below.</label>
+      <textarea id="text" name="text" cols="50" rows="30" style="width: 80%; border: 5px solid pink;" placeholder="paste text here"></textarea>
+    </div>
+
+  </div>
+
+    </body>
+</html>
