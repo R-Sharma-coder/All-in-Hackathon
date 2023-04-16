@@ -27,11 +27,13 @@ We were able to dive deeper into the world of productivity, and brainstorm effic
 We learned about OpenAI usage within applications, and how to dive deeper into using it within the backend of our Homepage. Some of us also had learned to use Flask for the first time, and we learned a lot about web development in 24 hours. 
  
 ## What is next for All-ganize: 
-Add / delete your tasks dynamically. 
-Log in: We will work with User Authentication to find a way to create specific user profiles. Users will be able to log into their profiles, and view their saved ‘Goals’ and ‘To Do’ list. 
-Help create tasks automatically from the homework assignment list into the to do task.
+1. The ability to be able to Add / delete your tasks dynamically. 
+2. Log in feature: We will work with User Authentication to find a way to create specific user profiles. Users will be able to log into their profiles, and view their saved ‘Goals’ and ‘To Do’ list. 
+3. Help create tasks automatically from the homework assignment list into the to do task.
 
 ## Future Work includes: 
-Improving / formatting the syllabus into a more structured format
-Building smaller datasets / use few shot learning to fine tuned models for document extraction tasks such as this.
+1. Improving / formatting the syllabus into a more structured format
+2. Building smaller datasets / use few shot learning to fine tuned models for document extraction tasks such as this.
+
+
 We are hoping to fix additional issues or bugs with our application.
