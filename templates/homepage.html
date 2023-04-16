@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All in Hackathon Homepage</title>
-    <link href="../homepage.css" rel="stylesheet" type="text/css" />
-  </head>
+    <link href="homepage.css" rel="stylesheet" type="text/css">
+    <!-- We could add a small logo, that would show up on new tabs -->
+    <link rel="icon" href="ImageLogoSmall" utf-8="">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
 
-  <body>
-  <!-- Navbar -->
-  <div class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#upload">Get Started</a></li>
-      <li><a href="secondpage.html">Start With Intention</a></li>
-      <li><a href="thirdpage.html">Need Some Motivation?</a></li>
-    </ul>
-  </div>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#upload">Get Started</a></li>
+          <li><a href="secondpage.html">Start With Intention</a></li>
+          <li><a href="thirdpage.html">Need Some Motivation?</a></li>
+        </ul>
+      </div>
 
+      <div class="flex-container">
 
-  <!-- Flexbox -->
-<div class="flex-container">
+        <!-- Image or Logo -->
+        <div class="image">
+          <img src="https://cdn.discordapp.com/attachments/1096845146663952386/1097177738848243802/All_In_Hackathon_Logo_website.png" alt="allganizelogo" width="400px" height="400px"
+        </div>
+      
+        <!-- Text on the side (Right) -->
+        <div class="side-text-flexbox">
+          <h1>All-ganize</h1>
+          <h3>Optimize your success through All-ganize, a tool we ALL can use to improve our productivity and organization!</h3>
+        </div>
+      
+      </div>
 
-  <!-- Image or Logo -->
-  <div class="image">
-    <img src="https://cdn.discordapp.com/attachments/1096845146663952386/1097177738848243802/All_In_Hackathon_Logo_website.png alt="allganizelogo" width="400px" height="400px"
-  </div>
+    <!---About section-->
 
-  <!-- Text on the side (Right) -->
-  <div class="side-text-flexbox">
-    <h1>All-ganize</h1>
-    <h3>Optimize your success through All-ganize, a tool we ALL can use to improve our productivity and organization!</h3>
-  </div>
+    <div class = "about">
+        <h1 id = "about"> About 'All-ganize' </h1> 
+        <p>Welcome to ‘All-ganize’, the optimal productivity resource for busy students and professionals! This website will assist those finding themselves swamped with deadlines and due dates. Are you tired of manually entering in all of your important information? We are here to help!! 
+        With our platform, easily upload your PDF documents - like a class syllabus - and our technology will pull out the important information from those documents - like the assignment due dates off of your class syllabus! Try it out today, and experience the benefits for yourself! You will be better able to increase your productivity, keep track of your due dates and schedule.  
+        </p>
+      </div>
 
-</div>
+    <!---Upload section-->
 
+    <div class="upload">
+        <h1 id="upload"> Get Started</h1>
 
-  <!---About section-->
+        <!--Text boxes -->
+        <form action="{{ url_for('handle_data') }}" method="post">
+            <div class="link"><label for="link" style="margin-bottom: 20px;">Enter the link to your syllabus here:
+                    (Note: the link can not be a 'google drive' or private link):</label>
+                <input type="text" id="link" name="link" size="50" style="width: 80%; border: 5px solid pink;"
+                    placeholder="link here">
+            </div>
+            <div class="text">
+                <label for="text" style="margin-bottom: 20px;">If the link to your syllabus does not exist, please copy
+                    and paste the contents of your syllabus into the text-field below.</label>
+                <textarea id="text" name="text" cols="50" rows="30" style="width: 80%; border: 5px solid pink;"
+                    placeholder="paste text here"></textarea>
+            </div>
 
-  <div class = "about">
-    <h1 id = "about"> About 'All-ganize' </h1> 
-    <p>Welcome to ‘All-ganize’, the optimal productivity resource for busy students and professionals! This website will assist those finding themselves swamped with deadlines and due dates. Are you tired of manually entering in all of your important information? We are here to help!! 
-    With our platform, easily upload your PDF documents - like a class syllabus - and our technology will pull out the important information from those documents - like the assignment due dates off of your class syllabus! Try it out today, and experience the benefits for yourself! You will be better able to increase your productivity, keep track of your due dates and schedule.  
-    </p>
-  </div>
-
-  <!---Upload section-->
-
-  <div class = "upload">
-    <h1 id = "upload"> Get Started</h1>
-
-    <!--Text boxes -->
-    <div class = "link"><label for="link" style="margin-bottom: 20px;">Enter the link to your syllabus here: (Note: the link can not be a 'google drive' or private link):</label>
-        <input type="text" id="link" name="link" size="50" style="width: 80%; border: 4px solid #FFDFD3;" placeholder="link here">
-    </div>     
-   
-    <div class = "text">
-      <label for="text" style="margin-bottom: 20px;">If the link to your syllabus does not exist, please copy and paste the contents of your syllabus into the text-field below.</label>
-      <textarea id="text" name="text" cols="50" rows="30" style="width: 80%; border: 4px solid #FFDFD3;" placeholder="paste text here"></textarea>
     </div>
 
-  </div>
-  <button id="my-button">Submit</button>
+    <button id="my-button">Submit</button>
     </form>
 
     <div id="table-container"></div>
@@ -116,5 +124,6 @@
     </script>
     <a class="btn btn-success" href="{{url_for('get_csv')}}">Download the csv file</a>
     </div>
-    </body>
+</body>
+
 </html>
