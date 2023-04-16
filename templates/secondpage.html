@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in Hackathon secondpage</title>
+    <link href="../secondpage.css" rel="stylesheet" type="text/css">
+    <script src="../secondpage.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="thirdpage.html">Need Some Motivation?</a></li>
+      </ul>
+    </div>  
+
+
+    <!--Flexbox-->
+      <!-- Flexbox -->
+  <div class="flex-container">
+
+    <!--Image or Logo-->
+    <div class ="goalsimage"><img id ="goalsimage"
+      src="https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt = "goalsimage"></img></div>
+    <!--Text on the side (Left)-->
+      <div class="side-text-flexbox">
+      <h1 id="main-title">Start with Intention</h1>
+      <h2 id="goals header"> Set your Goals:</h2>
+      <p> Setting your goals are crucial to making sure you properly focus your efforts, consider prioritization and measure the progress you are making towards accomplishing those goals. Establishing specific, measurable, and attainable goals are important to create a gameplan for your success, and making sure you are able to reach your destination. </p>
+      <h2 id="todo header"> Create a To Do List:</h2>
+      <p> To do lists are within the same avenue as goal setting. The main difference is that goal setting is more for establishing long-term objectives, while to do lists are shorter term tasks in more manageable steps. By taking our larger goals and making them into more bite sized portions, we are better able to ensure that we are not overwhelmed, and are able to feel more accomplished with every completed task.</p>
+
+    </div>
+  </div>
+
+  <!---goals setting-->
+    <div class = “goals-setting” >
+    <div id="myDIV" class="header">
+      <h2>My Goals</h2>
+      <input type="text" id="myInput" placeholder="Goal...">
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+      <li>Pass upcoming Anatomy exam</li>
+      <li class="checked">Obtain a 3.5 GPA by the end of this semester</li>
+      <li>Completing my portfolio/research project on social justice topic</li>
+      <li>Learn AWS </li>
+      <li>Attend three Hackathons, and learn 2 new frameworks</li>
+      <li>Complete Data Structures and Algorithms with an A</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <!---To do List-->
+    <div class = “to-do-list”>
+      <div id="myDIV2" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Task...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL2">
+        <li>Assignment 1</li>
+        <li class="checked">Study for Anatomy exam</li>
+        <li>Read chapter 3 of psychology book </li>
+        <li>Email Professor Y.</li>
+        <li>Annotate novel</li>
+        <li>Organize office</li>
+      </ul>
+    </div>
+  </body>
