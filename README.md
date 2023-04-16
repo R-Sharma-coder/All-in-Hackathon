@@ -1,5 +1,5 @@
-# All-in-Hackathon
-All Organize
+# All-ganize (All-in-Hackathon)
+Optimize your success through All-ganize, a tool we ALL can use to improve our productivity and organization!
 
 README description: 
 
