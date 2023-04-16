@@ -11,7 +11,8 @@ The web application is separated into three separate pages. In the homepage, Wit
 
 Aside from this feature, there is also a second page, which houses a customizable ‘goals’ list, as well as a ‘To-do’ application which helps users stay committed. and focused on their daily tasks and needs. In the third page of the website, we created a motivational moodboard, with some of our favorite motivational quotes to inspire students to get started on persevering and accomplishing their goals. 
 
-
+View this video for a prototype:
+https://drive.google.com/file/d/1pFXSxSIvBHG61hzUjV7XZl5JIETWnhOn/view?usp=sharing 
 ## How we built it:
 The entirety of this website uses tools, frameworks, and languages including - HTML/CSS (for website design), Javascript (for the functionality of the ‘Goals’ and To do Lists’, as well as Python and Flask. Our homepage uses OpenAI gpt-3.5 model, where it behaves like a chatbot and we use our custom prompt to extract the correct information from the syllabi that are uploaded to the website.
 
