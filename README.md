@@ -1,12 +1,10 @@
 # All-ganize (All-in-Hackathon)
 Optimize your success through All-ganize, a tool we ALL can use to improve our productivity and organization!
 
-README description: 
-
-Welcome to All Organize, the app for planning and scheduling! This website will assist those finding themselves swamped with deadlines and due dates. Are you tired of manually entering in all of your important information? We are here to help!!
+Welcome to All Organize, the application for planning and scheduling! This website will assist those finding themselves swamped with deadlines and due dates. Are you tired of manually entering in all of your important information? We are here to help!!
 
 ## Inspiration: 
-We wanted to create an application that students could use to increase their organization and productivity, and use to allow themselves to be on track with their learning objectives. 
+We wanted to create an application that students could use to stay motivated, and to increase their organization and productivity, and use to allow themselves to be on track with their learning objectives. The application comes with several different features - including the feature that extracts important information from syllabi, customizable 'Goals' and 'To Do' list trackers - and a motivational board with inspirational quotes to keep students going towards accomplishing their aspirations.
 
 ## What it does: 
 The web application is separated into three separate pages. In the homepage, With our platform, easily link your pdf documents or copy paste the text into our software (text - like a class syllabus) - and our technology will pull out the important information from those documents, for instance, like the assignment due dates off of your class syllabus! Our application is then designed to display the extracted information to the users. 
