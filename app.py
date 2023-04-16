@@ -3,13 +3,11 @@ import openai
 import pandas as pd
 from urllib.request import urlopen
 from flask import Flask, Response
-from flask import send_file,send_from_directory
 from bs4 import BeautifulSoup
 global df
-
 df = pd.read_csv('output.csv',encoding='unicode_escape', on_bad_lines='skip')
 
-api_key = "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" # Open AI key for sylabbus extraction.
+# api_key = NEED TO ADD THIS FOR CODE TO WORK!
 openai.api_key = api_key
 model_id = 'gpt-3.5-turbo'
 csv_file_name = 'output.csv'
