@@ -38,3 +38,6 @@ We learned about OpenAI usage within applications, and how to dive deeper into u
 
 
 We are hoping to fix additional issues or bugs with our application.
+Here are example links that you can try with the application :
+https://www.cs.cornell.edu/courses/cs2110/2023sp/schedule.html
+https://www.cs.princeton.edu/courses/archive/spr23/cos126/schedule/
