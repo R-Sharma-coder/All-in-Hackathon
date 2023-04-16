@@ -34,6 +34,7 @@ We learned about OpenAI usage within applications, and how to dive deeper into u
 ## Future Work includes: 
 1. Improving / formatting the syllabus into a more structured format
 2. Building smaller datasets / use few shot learning to fine tuned models for document extraction tasks such as this.
+3. Currently extraction takes 5 - 10 seconds to accomplish. We would like to find a way to further reduce the time that it takes to extract information from syllabi. 
 
 
 We are hoping to fix additional issues or bugs with our application.
