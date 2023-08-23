@@ -61,7 +61,6 @@ def handle_data():
     # Lecture Number, Topic Name, Date,Homework Info, Homeworks into a csv, from the following text:" + text
     conversation.append({'role':'system','content':first_question})
     conversation = chat_gpt_conversation(conversation)
-    # print(f"conversation[-1]['content']:{conversation[-1]['content']}")
     lst = conversation[-1]['content'].split('\n')
     for i in range(len(lst)):
         if lst[i].find(":") == -1:
@@ -73,9 +72,7 @@ def handle_data():
         if lst[i][-1] == "":
             lst[i] = lst[i][:-1]
     lst = lst[1:]
-    # print(f"Type of conversation[-1]['content']:{type(conversation[-1]['content'])},list of output:{lst}")
     with open('output.csv','w') as out:
-        # out.write("Lecture Number, Topic Name,Day, Date,Homework due date Info, Homeworks due date\n")
         out.write(conversation[-1]['content'].strip())
     df  = pd.read_csv('output.csv',encoding='unicode_escape', on_bad_lines='skip')
     
@@ -89,7 +86,6 @@ def get_csv():
         mimetype="text/csv",
         headers={"Content-disposition":
 "attachment; filename=assignment.csv"})
-# send_from_directory("/", "output.csv", as_attachment=True)
 
 @app.route('/get_syllabus')
 def get_syllabus():
